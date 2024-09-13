@@ -15,7 +15,10 @@
 
 // Your code goes here
 
-This is first file setup for GitHub
+function logMessage() {
+console.log('Hello, World!');
+}
+logMessage(); 
 
 
 /**
@@ -30,7 +33,11 @@ This is first file setup for GitHub
 */
 
 // Your code goes here...
+function logMyMessage(message) {
+console.log(message);
+}
 
+logMyMessage('My message');
 
 
 
@@ -45,9 +52,11 @@ This is first file setup for GitHub
 */
 
 // Your code goes here...
+function logMessageWithMyName(firstName) {
+console.log('My name is ' + firstName + '!');
+}
 
-
-
+logMessageWithMyName('Iskandar');
 
 /**
  * ==============================================================
@@ -62,8 +71,11 @@ This is first file setup for GitHub
 
 // Your code goes here...
 
+function logMyInfo(name, age) {
+  console.log('My name is ' + name + '. I am ' + age + ' years old!');
+}
 
-
+logMyInfo('Iskandar', 38);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
@@ -77,6 +89,8 @@ const f = {
   logMyMessage: logMyMessage || undefined,
   logMessageWithMyName: logMessageWithMyName || undefined,
   logMyInfo: logMyInfo || undefined
-}
+};
 
 export { f };
+
+
