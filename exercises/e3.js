@@ -15,8 +15,17 @@
  */
 
 // Your code goes here...
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+if (!arr.length) return false;
+for (var elem of arr) {
+  if (elem > val1 && elem < val2)
+  return true;
+}
+return false;
+}
 
-
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5);
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10);
 
 
 /**
@@ -35,6 +44,47 @@
  */
 
 // Your code goes here...
+function getValueWithConditionOne(num1, num2) {
+  if (num1 && num2 === 50) {
+    return (num1 + num2) * 2;
+  } else if (num1 === num2) {
+  return num1 + num2;
+} else {
+ return (num1 + num2) * 2;
+}
+}
+
+getValueWithConditionOne(50, 50);
+getValueWithConditionOne(20, 30);
+
+
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1 && num2 === 50) {
+    return (num1 + num2) * 2;
+  } else if (num1 === num2) {
+  return num1 + num2;
+} else {
+ return (num1 + num2) * 2;
+}
+};
+
+getValueWithConditionTwo(50, 50);
+getValueWithConditionTwo(20, 30);
+
+
+
+const getValueWithConditionThree = function (num1, num2) {
+  if (num1 && num2 === 50) {
+    return (num1 + num2) * 2;
+  } else if (num1 === num2) {
+  return num1 + num2;
+} else {
+ return (num1 + num2) * 2;
+}
+};
+
+getValueWithConditionThree(50, 50);
+getValueWithConditionThree(20, 30);
 
 
 
@@ -51,5 +101,5 @@ const f = {
   getValueWithConditionOne: getValueWithConditionOne || undefined,
   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
   getValueWithConditionThree: getValueWithConditionThree || undefined,
-}
+};
 export { f };
